@@ -24,4 +24,9 @@ public class HomeController {
 		model.addAttribute("message", message);
 		return "contact";
 	}
+	
+	@GetMapping("/portfolio")
+	public String portfolio() {
+		return "portfolio";
+	}
 }
