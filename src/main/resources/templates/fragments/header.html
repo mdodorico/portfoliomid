@@ -1,8 +1,10 @@
 <div th:fragment="navbar" class="navbar navbar-expand-md navbar-dark">
   <div class="container-fluid d-flex justify-content-between align-items-center">
-    <a th:href="@{/}" class="logo">
-      <img th:src="@{/assets/img/logo.png}" alt="" class="img-fluid">
-    </a>
+    <div style="margin-right: 10%;">
+	     <a th:href="@{/}" class="logo" >
+	      <img th:src="@{/assets/img/logo.png}" alt="logo" class="img-fluid">
+	    </a>
+    </div>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li>
@@ -12,13 +14,22 @@
           <a th:href="@{/about}">Sobre mí</a>
         </li>
         <li>
+          <a th:href="@{/cv}">CV</a>
+        </li>
+        <li>
           <a th:href="@{/portfolio}">Proyectos</a>
         </li>
         <li>
           <a th:href="@{/contact}">Contacto</a>
         </li>
+        <li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
+     </nav>  
+        <div class="d-flex" style="margin-left: 0%;">
+	      <a th:href="@{assets/documents/cv-mariana-dodorico.pdf}" download="CV Mariana D'Odorico.pdf" class="btn btn-primary" title="Descargar CV español en formato PDF" style="margin-right: 5px"><i class="fa-solid fa-download"></i>&nbsp;CV Español</a>
+	      <a th:href="@{assets/documents/cv-mariana-dodorico-english.pdf}" download="CV Mariana D'Odorico (english).pdf" class="btn btn-primary" title="Descargar CV inglés en formato PDF"><i class="fa-solid fa-download"></i>&nbsp;CV Inglés</a>
+		</div>
+    </div>
   </div>
 </div>
