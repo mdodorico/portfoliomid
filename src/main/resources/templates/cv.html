@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mi CV</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
+    <link th:href="@{assets/img/logo.png}" rel="icon">
+    <link th:href="@{assets/vendor/aos/aos.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/glightbox/css/glightbox.min.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/swiper/swiper-bundle.min.css}" rel="stylesheet">
+    <link th:href="@{assets/css/style.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/datatables/datatables.css}" rel="stylesheet">
+    <link th:href="@{assets/vendor/datatables/datatables.min.css}" rel="stylesheet">
+  </head>
+  <body>
+    <header th:insert="fragments/header.html :: navbar"></header>
+    <main id="main">
+    <div class="container" data-aos="fade-up">
+      <section id="resume" class="resume">
+         <div class="section-title">
+           <h2>Conocimientos y experiencia</h2>
+         </div>
+        <div class="resume-tecs">
+          <h5 style="margin-bottom: 2%;">Lenguajes &amp; herramientas</h5>
+            <i class="devicon-angularjs-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>      
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-csharp-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>  
+            <i class="devicon-java-plain-wordmark colored"></i>
+            <img th:src="@{assets/img/logo-eclipse.png}" class="icon"/>
+            <img th:src="@{assets/img/logo-intellij.png}" class="icon"/>
+            <i class="devicon-spring-plain-wordmark colored" style="font-size: 50px;"></i>
+            <i class="devicon-mysql-plain-wordmark colored" style="font-size: 50px;"></i>
+            <img th:src="@{assets/img/logo-mysql-workbench.png}" class="icon"/>
+            <i class="devicon-visualstudio-plain colored"></i>
+            <i class="devicon-vscode-plain colored"></i>
+            <i class="devicon-windows8-original colored"></i>
+            <i class="devicon-ubuntu-plain colored"></i>
+            <img th:src="@{assets/img/logo-netbeans.png}" class="icon"/>
+        </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Educación</h3>
+              <div class="resume-item">
+                <h4>Técnico Universitario en Programación de Sistemas</h4>
+                <h5>2019 - 2022</h5>
+                <p>
+                  <em>Universidad de Ciencias Empresariales y Sociales (UCES)</em>
+                </p>
+                <p>Promedio final: 8,35</p>
+              </div>
+              <div class="resume-item">
+                <h4>Bachiller con Modalidad en Humanidades y Ciencias Sociales</h4>
+                <h5>2003 - 2007</h5>
+                <p>
+                  <em>Instituto Social Militar Dr. Dámaso Centeno</em>
+                </p>
+                <p>Promedio final: 7,05</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Experiencia laboral</h3>
+              <div class="resume-item">
+                <h4>Programadora Frontend</h4>
+                <h5>Agosto 2022 - Actualidad</h5>
+                <p>
+                  <em>Ewwo Consulting, CABA</em>
+                </p>
+                <ul>
+                  <li>Desarrollo web frontend. Los principales clientes son sindicatos y obras sociales de Argentina.</li>
+                  <li>Uso de JavaScript y Angular en Ubuntu.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Auditora</h4>
+                <h5>Octubre 2021 – Julio 2022</h5>
+                <p>
+                  <em>Ewwo Consulting, CABA</em>
+                </p>
+                <ul>
+                  <li>Auditora bilingüe para Verizon Business (USA) de circuitos análogos y digitales (DS0, DS1, DS3, T1, T3 y otros).</li>
+                  <li>Control y seguimiento del progreso de órdenes utilizando herramientas de provisionamiento de Verizon para la auditoría de los circuitos.</li>
+                  <li>Identificación y resolución de problemas para desconexiones de estos circuitos en USA para la recuperación de costos de línea.</li>
+                  <li>Seguimiento del progreso de órdenes en los sistemas internos para asegurar el objetivo y expectativas del proyecto.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Técnica en Bibliotecología</h4>
+                <h5>Diciembre 2014 – Septiembre 2021</h5>
+                <p>
+                  <em>Biblioteca Nacional Mariano Moreno</em>
+                </p>
+                <ul>
+                  <li>Jefa de la División de Selección de Publicaciones Seriadas (Departamento Gestión de Publicaciones Seriadas - Hemeroteca)</li>
+                  <li>Confección de informes de personal, presupuesto de departamento y memoria anual</li>
+                  <li>Entrenamiento del personal a cargo</li>
+                  <li>Selección positiva y negativa de materiales provenientes de donación y compra</li>
+                  <li>Primer ingreso para materiales de selección positiva: carga en sistema, sellos oficiales de la institución y alarmas.</li>
+                  <li>Impresión de etiquetas de inventario y control de números de inventario</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer th:insert="fragments/footer.html :: footer"></footer>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Volver arriba">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script th:src="@{assets/vendor/purecounter/purecounter_vanilla.js}"></script>
+    <script th:src="@{assets/vendor/aos/aos.js}"></script>
+    <script th:src="@{assets/vendor/glightbox/js/glightbox.min.js}"></script>
+    <script th:src="@{assets/vendor/isotope-layout/isotope.pkgd.min.js}"></script>
+    <script th:src="@{assets/vendor/swiper/swiper-bundle.min.js}"></script>
+    <script th:src="@{assets/vendor/waypoints/noframework.waypoints.js}"></script>
+    <script th:src="@{assets/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/vendor/bootstrap/js/bootstrap.js}"></script>
+    <script th:src="@{assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{assets/js/jquery-3.6.0.js}"></script>
+    <script th:src="@{assets/js/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{assets/js/jquery.dataTables.js}"></script>
+    <script th:src="@{assets/js/jquery.dataTables.min.js}"></script>
+    <script th:src="@{assets/js/main.js}"></script>
+  </body>
+</html>
