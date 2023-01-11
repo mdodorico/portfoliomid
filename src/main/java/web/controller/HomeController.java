@@ -29,4 +29,9 @@ public class HomeController {
 	public String portfolio() {
 		return "portfolio";
 	}
+	
+	@GetMapping("/cv")
+	public String cv() {
+		return "cv";
+	}
 }
