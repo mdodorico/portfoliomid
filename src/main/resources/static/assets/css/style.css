@@ -25,6 +25,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.btn-primary{
+	background: #b6ddfe;
+	border-radius: 4px;
+	
+}
+
 #main {
   margin-top: 50px;
 }
@@ -354,7 +360,7 @@ svg {
 */
 .navbar {
   padding: 0;
-  margin-right: 23%;
+  margin-right: 0%;
 }
 
 .navbar ul {
@@ -473,13 +479,6 @@ svg {
   top: 0;
   left: 100%;
   visibility: visible;
-}
-
-.avatar {
-  vertical-align: middle;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
 }
 
 @media (max-width: 1366px) {
@@ -766,41 +765,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #222222;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f3f3f3;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-}
-
-/*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
@@ -817,6 +781,22 @@ section {
   border-left: 2px solid #0498e8;
   position: relative;
 }
+
+.resume .resume-tecs {
+  margin-bottom: 5%;
+}
+
+.resume .resume-tecs i {
+  font-size: 43px;
+  padding: 0 0 20px 20px;
+}
+
+.resume .resume-tecs img {
+  width: 60px;
+  height: 60px;
+  padding: 0 0 20px 20px;
+}
+
 
 .resume .resume-item h4 {
   line-height: 18px;
@@ -867,6 +847,17 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  align-items: center;
+}
+
+.contact .info a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact .info a:hover {
+  color: rgb(255, 128, 192);
+  text-decoration: none;
 }
 
 .contact .info i {
@@ -881,21 +872,14 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #222222;
+  margin-bottom: 4%;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #555555;
+  margin-top: 2%;
 }
 
 .contact .info .email,
